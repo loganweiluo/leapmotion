@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Leap Motion CoverFlow Sample</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/contentflow_src.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    </head>
+    <body>
+
+	<div id="content">
+        <div id="branding"><span class="grey">STYLE</span><span class="coral_blue">.ME</span></div>
+		<div id="main">
+
+			<div id="contentFlow" class="ContentFlow clearfix">
+				<div class="loadIndicator"><div class="indicator"></div></div>
+                    <div class="button" id="previous_button"></div><div class="button" id="next_button"></div>
+                        <div class="flow">
+                            <img id="handbag_1" class="item" src="pics/handbag_1_thumb.png" title="Grey Patent leather handbag"/>
+                            <img id="shoe_1" class="item" src="pics/shoe_1_thumb.png" title="Black patent leather pump"/>
+                            <img id="shoe_2" class="item" src="pics/shoe_2_thumb.png" title="Black leather boot stiletto"/>
+                            <img id="shoe_3" class="item" src="pics/shoe_3_thumb.png" title="White leather boot stiletto"/>
+                            <img id="skirt_1" class="item" src="pics/skirt_1_thumb.png" title="Black wool mini skirt"/>
+                            <img id="skirt_2" class="item" src="pics/skirt_2_thumb.png" title="Beaded mini skirt"/>
+                            <img id="top_1" class="item" src="pics/top_1_thumb.png" title="Wool turtleneck bodysuit"/>
+                            <img id="top_2" class="item" src="pics/top_2_thumb.png" title="Cashmere sweater"/>
+                            <img id="dress_1" class="item" src="pics/dress_1_thumb.png" title="Silk dress with leather belt"/>
+                        </div>
+
+				<div class="globalCaption"></div>
+			</div>
+
+            <div id="changing_room_container">
+                <div id="saved_size">
+                    <div class="header"><span class="grey">YOUR SAVED</span><span class="coral_blue"> BODI.ME</span></div>
+                    <table>
+                        <tr class="grey"><td>HEIGHT</td><td>178CM</td></tr>
+                        <tr class="grey"><td>BUST</td><td>92CM</td></tr>
+                        <tr class="grey"><td>WAIST</td><td>72CM</td></tr>
+                        <tr class="grey"><td>HIPS</td><td>97CM</td></tr>
+                    </table>
+                    <a class="link_as_button coral_blue_background">UPDATE MEASUREMENTS</a>
+                </div>
+                <div id="chosen_style">
+                    <div class="header"><span class="grey">YOUR STYLE</span><span class="coral_blue"> AND SIZE</span></div>
+                    <div>
+                        <table class="grey" id="current_style_table">
+                        </table>
+                    </div>
+                    <div>
+                        <a class="link_as_button coral_blue_background">ADD THE LOOK TO BASKET</a>
+                    </div>
+                </div>
+				<div id="changing_room">
+					<img id="base" src="pics/model_front.jpg" />
+					<img id="overlay_top" src="pics/empty.png"/>
+					<img id="overlay_skirt" src="pics/empty.png"  />
+					<img id="overlay_shoe" src="pics/empty.png"  />
+					<img id="overlay_dress" src="pics/empty.png" />
+					<img id="overlay_handbag" src="pics/empty.png" />
+				</div>
+
+			</div>
+
+			</body>
+			<script src="lib/leap_min.js"></script>
+			<script src="lib/jQuery_min.js"></script>
+			<script src="lib/contentflow_src.js"></script>
+			<script src="js/SelectionHandler.js"></script>
+			<script src="js/SwipeHandler.js"></script>
+			<script src="js/App.js"></script>
+
+	</div>
+</html>
